@@ -13,7 +13,7 @@ public class PrimeFibonacci {
         }
     }
 
-    // Method to generate Fibonacci numbers below a specified limit
+    
     public static ArrayList<Integer> generateFibonacciNumbers(int limit) {
         ArrayList<Integer> fibonacci = new ArrayList<>();
         int a = 0, b = 1;
@@ -28,16 +28,15 @@ public class PrimeFibonacci {
         return fibonacci;
     }
 
-    // Method to check if a number is prime
     public static boolean isPrime(int num) {
-        if (num <= 1) return false; // 0 and 1 are not prime numbers
-        if (num <= 3) return true; // 2 and 3 are prime numbers
+        if (num <= 1) return false; 
+        if (num <= 3) return true; 
 
-        // Check for factors from 2 to the square root of num
+ 
         for (int i = 2; i * i <= num; i++) {
-            if (num % i == 0) return false; // Found a factor, not prime
+            if (num % i == 0) return false; 
         }
 
-        return true; // No factors found, it's prime
+        return true;
     }
 }
