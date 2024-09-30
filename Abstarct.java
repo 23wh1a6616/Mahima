@@ -6,7 +6,7 @@ class BankA extends Bank {
     private double balance;
 
     public BankA() {
-        this.balance = 100.0; // Deposit $100
+        this.balance = 100.0;
     }
 
   
@@ -20,7 +20,7 @@ class BankB extends Bank {
     private double balance;
 
     public BankB() {
-        this.balance = 150.0; // Deposit $150
+        this.balance = 150.0; 
     }
 
 
@@ -33,7 +33,7 @@ class BankC extends Bank {
     private double balance;
 
     public BankC() {
-        this.balance = 200.0; // Deposit $200
+        this.balance = 200.0; 
     }
 
     public double getBalance() {
