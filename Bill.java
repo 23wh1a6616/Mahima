@@ -8,7 +8,6 @@ class ElectricityBill {
     private String connectionType; // "domestic" or "commercial"
     private double billAmount;
 
-    // Constructor to initialize the electricity bill
     public ElectricityBill(String consumerNo, String consumerName, double previousMonthReading,
                            double currentMonthReading, String connectionType) {
         this.consumerNo = consumerNo;
@@ -19,12 +18,10 @@ class ElectricityBill {
         this.billAmount = calculateBill();
     }
 
-    // Method to calculate the bill based on user-defined tariffs
     private double calculateBill() {
         double unitsConsumed = currentMonthReading - previousMonthReading;
         double rate;
 
-        // Define the tariff rates based on connection type
         if (connectionType.equals("domestic")) {
             if (unitsConsumed <= 100) {
                 rate = 1.5; // Rate per unit for domestic
@@ -48,7 +45,7 @@ class ElectricityBill {
         return unitsConsumed * rate;
     }
 
-    // Method to display the bill details
+  
     public void displayBill() {
         System.out.println("Electricity Bill Details:");
         System.out.println("Consumer No: " + consumerNo);
@@ -83,7 +80,7 @@ public class Main {
         System.out.println("Enter Type of Connection (domestic/commercial):");
         String connectionType = scanner.nextLine();
 
-        // Create ElectricityBill object
+
         try {
             ElectricityBill bill = new ElectricityBill(consumerNo, consumerName, previousMonthReading,
                     currentMonthReading, connectionType);
