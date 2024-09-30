@@ -5,7 +5,7 @@ class Invoice {
     private int quantity;
     private double pricePerItem;
 
-    // Constructor to initialize the instance variables
+ 
     public Invoice(String partNumber, String partDescription, int quantity, double pricePerItem) {
         this.partNumber = partNumber;
         this.partDescription = partDescription;
@@ -13,9 +13,9 @@ class Invoice {
         this.pricePerItem = pricePerItem;
     }
 
-    // Method to calculate the invoice amount
+    
     public double getInvoiceAmount() {
-        // Calculate total amount, ensuring quantity and price are non-negative
+       
         if (quantity < 0 || pricePerItem < 0) {
             return 0.0;
         }
@@ -39,7 +39,7 @@ class Invoice {
         return pricePerItem;
     }
 
-    // Set methods
+
     public void setPartNumber(String partNumber) {
         this.partNumber = partNumber;
     }
@@ -59,7 +59,7 @@ class Invoice {
 
 public class Main {
     public static void main(String[] args) {
-        // Create an Invoice object
+      
         Invoice invoice = new Invoice("12345", "Hammer", 3, 15.99);
         
         // Display invoice details and the total amount
