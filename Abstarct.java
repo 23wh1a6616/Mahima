@@ -41,7 +41,6 @@ class BankC extends Bank {
     }
 }
 
-// Example usage
 public class Main {
     public static void main(String[] args) {
         Bank bankA = new BankA();
