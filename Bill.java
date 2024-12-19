@@ -5,7 +5,7 @@ class ElectricityBill {
     private String consumerName;
     private double previousMonthReading;
     private double currentMonthReading;
-    private String connectionType; // "domestic" or "commercial"
+    private String connectionType; 
     private double billAmount;
 
     public ElectricityBill(String consumerNo, String consumerName, double previousMonthReading,
