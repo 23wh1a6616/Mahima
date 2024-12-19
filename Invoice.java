@@ -1,5 +1,4 @@
 class Invoice {
-    // Instance variables
     private String partNumber;
     private String partDescription;
     private int quantity;
@@ -21,8 +20,6 @@ class Invoice {
         }
         return quantity * pricePerItem;
     }
-
-    // Get methods
     public String getPartNumber() {
         return partNumber;
     }
@@ -61,8 +58,7 @@ public class Main {
     public static void main(String[] args) {
       
         Invoice invoice = new Invoice("12345", "Hammer", 3, 15.99);
-        
-        // Display invoice details and the total amount
+    
         System.out.println("Part Number: " + invoice.getPartNumber());
         System.out.println("Part Description: " + invoice.getPartDescription());
         System.out.println("Quantity: " + invoice.getQuantity());
