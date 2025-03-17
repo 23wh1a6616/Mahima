@@ -28,6 +28,7 @@ Code Explanation:
 The program uses conditional statements (if, else if) or a switch-case structure to determine the arithmetic operation based on user input.
 The result is then printed to the console.
 
+
 2. Snake Game (Implemented in Java)
 Project Overview:
 This is a graphical Snake game built using Java’s Swing library. The player controls a snake that grows longer as it eats food. The objective is to avoid hitting walls or the snake’s own body.
@@ -55,6 +56,7 @@ Game Controls:
 Use arrow keys (Up, Down, Left, Right) to control the direction of the snake.
 Example:
 Upon running, a window opens with the Snake game. The player can use the arrow keys to control the snake and try to eat food that appears randomly on the screen.
+
 
 3. Vector Embeddings Chatbot (Implemented in Python using GUI Interface)
 Project Overview:
