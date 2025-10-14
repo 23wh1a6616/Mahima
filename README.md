@@ -31,14 +31,13 @@ The game ends when the snake collides with the wall or itself.
 2. Compile the program:
    ```bash
    javac SnakeGame.java
-Run the game:
+3. Run the program:
+   ```bash
+   java SnakeGame
 
-bash
-Copy code
-java SnakeGame
 Use the arrow keys to move the snake and try to survive as long as possible!
 
-🧮 Basic Calculator (Console Program)
+#🧮 Basic Calculator (Console Program)
 📘 Description
 A simple calculator that performs arithmetic operations (+, -, /) based on user input.
 It demonstrates switch-case control structure and exception handling in Java.
