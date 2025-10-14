@@ -1,139 +1,57 @@
-# Project Repository
+# 🎮 Java Mini Projects Collection
 
-This repository contains a collection of various Java and Python projects designed to demonstrate basic programming concepts, GUI applications, and machine learning models.
-
----
-
-## Projects
+This repository contains two simple yet interactive Java programs:
+1. 🐍 **Snake Game** – a GUI-based game built using **Java Swing**.  
+2. 🧮 **Basic Calculator** – a console-based calculator using **switch-case** and **exception handling**.
 
 ---
 
-### 1. **Calculator (Java)**
+## 🐍 Snake Game (Java Swing)
 
-📌 **Overview**  
-A simple console-based calculator application implemented in Java. The calculator allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+### 📘 Description
+A classic **Snake Game** implemented using **Java AWT** and **Swing** libraries.  
+The player controls a snake that moves across the grid, eats food, and grows in length.  
+The game ends when the snake collides with the wall or itself.
 
----
+### 🧩 Features
+- 🕹️ Arrow key controls (Up, Down, Left, Right).  
+- 🍎 Random food generation after each consumption.  
+- 🧠 Collision detection for both walls and the snake’s own body.  
+- ⏱️ Adjustable game speed using a timer.  
+- 💀 Displays **Game Over** and **Score** when the player loses.  
+- 🎨 Simple grid-based graphics using `paintComponent()` and `Graphics`.
 
-#### 🚀 Features:
-- Supports basic arithmetic operations: Addition, Subtraction, Multiplication, and Division.
-- Allows users to input two operands and choose the operation.
-- Performs basic input validation to ensure correct arithmetic operations.
+### ⚙️ Technologies Used
+- **Language:** Java  
+- **GUI:** Swing & AWT (`JFrame`, `JPanel`, `Graphics`, `Timer`)  
+- **Core Concepts:** OOP, Event Handling (`KeyListener`, `ActionListener`)
 
-#### 🛠️ Requirements:
-- Java Development Kit (JDK) 8 or later.
+### 🕹️ How to Run
+1. Copy the `SnakeGame.java` file into your Java project or folder.  
+2. Compile the program:
+   ```bash
+   javac SnakeGame.java
+Run the game:
 
-#### 📥 How to Run:
-1. Clone or download the repository.
-2. Open your terminal or command prompt.
-3. Navigate to the project folder.
-4. Compile the program with:
-    ```bash
-    javac Calculator.java
-    ```
-5. Run the program with:
-    ```bash
-    java Calculator
-    ```
+bash
+Copy code
+java SnakeGame
+Use the arrow keys to move the snake and try to survive as long as possible!
 
----
+🧮 Basic Calculator (Console Program)
+📘 Description
+A simple calculator that performs arithmetic operations (+, -, /) based on user input.
+It demonstrates switch-case control structure and exception handling in Java.
 
-#### Example Usage:
-```
-Enter first number: 5
-Enter an operator (+, -, *, /): +
-Enter second number: 10
-Result: 15.0
-```
+🧩 Features
+Accepts two integer inputs and an operator (+, -, /).
 
----
+Performs addition, subtraction, or division accordingly.
 
-#### Code Explanation:
-- The program uses conditional statements (`if`, `else if`) or a `switch-case` structure to determine the arithmetic operation based on user input.
-- The result is printed to the console.
+Includes try-catch blocks for handling:
 
----
+Division by zero (ArithmeticException)
 
-### 2. **Snake Game (Java)**
+Invalid input format (NumberFormatException)
 
-📌 **Overview**  
-A graphical Snake game built using Java’s Swing library. The player controls a snake that grows longer as it eats food. The objective is to avoid hitting walls or the snake’s own body.
-
----
-
-#### 🚀 Features:
-- Classic Snake game mechanics.
-- Snake grows longer as it eats food.
-- Game over when the snake hits the walls or itself.
-- Score is displayed during the game.
-
-#### 🛠️ Requirements:
-- Java Development Kit (JDK) 8 or later.
-- Java Swing library (comes pre-packaged with JDK).
-
-#### 📥 How to Run:
-1. Clone or download the repository.
-2. Open your terminal or command prompt.
-3. Navigate to the project folder.
-4. Compile the program with:
-    ```bash
-    javac SnakeGame.java
-    ```
-5. Run the game with:
-    ```bash
-    java SnakeGame
-    ```
-
----
-
-#### 🎮 Game Controls:
-- Use the **arrow keys** (Up, Down, Left, Right) to control the direction of the snake.
-
----
-
-### 3. **Vector Embeddings Chatbot (Python)**
-
-📌 **Overview**  
-This project implements a chatbot that uses vector embeddings to find the similarity between user queries and documents. It leverages the Sentence-BERT model for generating embeddings and uses them to retrieve the most relevant response based on the user's query.
-
----
-
-#### 🚀 Features:
-- Upload a document and query it using natural language.
-- Utilizes Sentence-BERT to calculate similarity between the uploaded document and the query.
-- Displays the most relevant answer from the document.
-- Simple GUI interface for user interaction.
-
-#### 🛠️ Requirements:
-- Python 3.x
-- Libraries:
-  - `sentence-transformers` (for Sentence-BERT model)
-  - `tkinter` (for GUI interface)
-
-#### 📥 How to Run:
-1. Clone or download the repository.
-2. Install the required libraries:
-    ```bash
-    pip install sentence-transformers tkinter
-    ```
-3. Run the Python program:
-    ```bash
-    python chatbot.py
-    ```
-
----
-
-#### Example Usage:
-- Upload a document (e.g., a research paper).
-- Type a query (e.g., "What is the main topic of the document?").
-- The chatbot will return the most relevant part of the document based on the similarity with your query.
-
----
-
-#### Code Explanation:
-- The Sentence-BERT model is used to generate embeddings for both the document and the user's query.
-- Cosine similarity is calculated to find the most relevant portion of the document.
-- The results are displayed through the `tkinter` GUI interface.
-
----
-
+Displays clear error messages when exceptions occur.
