@@ -1,10 +1,4 @@
-# 🎮 Java Mini Projects Collection
 
-This repository contains two simple yet interactive Java programs:
-1. **Snake Game** – a GUI-based game built using **Java Swing**.  
-2. **Basic Calculator** – a console-based calculator using **switch-case** and **exception handling**.
-
----
 
 ## Snake Game (Java Swing)
 
@@ -37,25 +31,6 @@ The game ends when the snake collides with the wall or itself.
 
 Use the arrow keys to move the snake and try to survive as long as possible!
 
-# Basic Calculator (Java Console Program)
-
-A simple **Java-based calculator** that performs arithmetic operations like addition, subtraction, and division based on user input.  
-This project demonstrates the use of **switch-case statements** and **exception handling** in Java.
-
----
-
-## 📘 Overview
-
-The calculator takes two integer inputs and an operator (`+`, `-`, `/`) from the user, performs the corresponding arithmetic operation, and prints the result.  
-It also handles common runtime errors such as division by zero and invalid inputs using **try-catch** blocks.
-
----
-
-## ⚙️ Technologies Used
-
-- **Language:** Java  
-- **Concepts Demonstrated:**
-  - Switch-case control structure  
   - Exception handling (`try-catch`)  
   - User input handling via `Scanner` class  
 
